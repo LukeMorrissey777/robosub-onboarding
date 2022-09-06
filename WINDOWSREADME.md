@@ -3,8 +3,7 @@
 Download docker https://www.docker.com/
   -- Docker lets you run containers which can simulate other operating systems. Because ROS can only be run on ubuntu, we will be using a container that is running ubuntu so we can run ros.
   
-Download xming https://sourceforge.net/projects/xming/
-  -- XMing allows you to run graphic applications inside the docker container and be able to see and interact with those applications outside the container.
+Follow these steps to get the GUI working inside the container: https://dev.to/darksmile92/run-gui-app-in-linux-docker-container-on-windows-host-4kde
   
 Restart your computer
 
@@ -34,5 +33,5 @@ locate display IP address by running `ipconfig` in a new terminal. Copy the ip4 
 
 Launch the container, where `X.X.X.X` is your ip4 address. Don't forget the `:0` at the end: 
 ```bash
-docker run -it -e DISPLAY=X.X.X.X:0 robosub-tut
+docker run -it -e DISPLAY=X.X.X.X:0 robosub_tut
 ```
