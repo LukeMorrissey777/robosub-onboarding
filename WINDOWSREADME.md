@@ -30,9 +30,9 @@ Build the file:
 docker build -t robosub_tut .
 ```
 
-locate display IP address by running ipconfig in a new terminal. Copy the ip4 address.
+locate display IP address by running `ipconfig` in a new terminal. Copy the ip4 address.
 
-Launch the container: 
+Launch the container, where `X.X.X.X` is your ip4 address. Don't forget the `:0` at the end: 
 ```bash
 docker run -it -e DISPLAY=X.X.X.X:0 robosub-tut
 ```
