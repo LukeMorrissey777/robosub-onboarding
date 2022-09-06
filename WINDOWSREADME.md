@@ -10,7 +10,7 @@ Restart your computer
 
 Open up a new terminal and create a new directory: 
 ```bash
-mkdir <DIRECTORY NAME
+mkdir <DIRECTORY NAME>
 ```
   
 cd to that directory: 
@@ -29,8 +29,6 @@ Build the file:
 ```bash
 docker build -t robosub_tut .
 ```
-
-connect to display?
 
 locate display IP address by running ipconfig in a new terminal. Copy the ip4 address.
 
